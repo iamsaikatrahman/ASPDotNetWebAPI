@@ -1,0 +1,47 @@
+2022-08-03 00:47:10.815 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-03 00:47:13.247 +06:00 [INF] Executed DbCommand (1,570ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [HotelListting_db];
+2022-08-03 00:47:13.484 +06:00 [INF] Executed DbCommand (232ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [HotelListting_db] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2022-08-03 00:47:13.510 +06:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-08-03 00:47:13.680 +06:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-08-03 00:47:13.683 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2022-08-03 00:47:13.713 +06:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-08-03 00:47:13.735 +06:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-08-03 00:47:13.766 +06:00 [INF] Applying migration '20220802175628_DatabaseCreated'.
+2022-08-03 00:47:13.828 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Countries] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [ShortName] nvarchar(max) NULL,
+    CONSTRAINT [PK_Countries] PRIMARY KEY ([Id])
+);
+2022-08-03 00:47:13.833 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Hotels] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Address] nvarchar(max) NULL,
+    [Rating] float NOT NULL,
+    [CountryId] int NOT NULL,
+    CONSTRAINT [PK_Hotels] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Hotels_Countries_CountryId] FOREIGN KEY ([CountryId]) REFERENCES [Countries] ([Id]) ON DELETE CASCADE
+);
+2022-08-03 00:47:13.840 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Hotels_CountryId] ON [Hotels] ([CountryId]);
+2022-08-03 00:47:13.852 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220802175628_DatabaseCreated', N'6.0.7');

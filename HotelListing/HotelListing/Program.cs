@@ -1,4 +1,6 @@
 
+using HotelListing.Data;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 
@@ -16,9 +18,12 @@ builder.Logging.AddSerilog(logger);
     
 
 builder.Services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DatabaseContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options=> {
     options.AddPolicy(name: AllowAll, policy => {
