@@ -1,0 +1,444 @@
+2022-08-04 07:16:40.953 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:16:41.001 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:16:41.006 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:16:41.007 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:16:41.007 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:16:42.079 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:16:43.174 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:16:43.181 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 1104.2321ms
+2022-08-04 07:16:43.182 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 8.0255ms
+2022-08-04 07:16:43.667 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:16:44.262 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 595.2941ms
+2022-08-04 07:16:50.308 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:16:50.318 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:16:50.353 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:16:50.669 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 307.5133ms
+2022-08-04 07:16:50.672 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:16:50.678 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'HotelListing.Controllers.CountryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-04 07:16:50.799 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 490.6132ms
+2022-08-04 07:20:54.075 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:20:54.122 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:20:54.127 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:20:54.128 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:20:54.128 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:20:54.809 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:20:55.204 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:20:55.205 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 401.7601ms
+2022-08-04 07:20:55.210 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.1070ms
+2022-08-04 07:20:55.779 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:20:55.937 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.5157ms
+2022-08-04 07:21:27.183 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:21:27.192 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:21:27.217 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:21:28.551 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:21:29.112 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IList`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[HotelListing.Repository.GenericRepository`1+<GetAll>d__7[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 07:21:29.153 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 1927.4141ms
+2022-08-04 07:21:29.155 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:21:29.160 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported. Path: $.MoveNextAction.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-04 07:21:29.239 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 2056.3944ms
+2022-08-04 07:21:29.241 +06:00 [ERR] An error occurred using the connection to database 'HotelListting_db' on server 'localhost\sqlexpress'.
+2022-08-04 07:21:29.264 +06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'HotelListing.Data.DatabaseContext'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-08-04 07:31:22.207 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:31:22.248 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:31:22.253 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:31:22.253 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:31:22.253 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:31:22.600 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:31:22.889 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 299.1174ms
+2022-08-04 07:31:22.891 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:31:22.895 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 3.4407ms
+2022-08-04 07:31:23.496 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:31:23.640 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.8537ms
+2022-08-04 07:31:36.678 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:31:36.686 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:31:36.709 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:31:37.944 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:31:39.933 +06:00 [INF] Executed DbCommand (342ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:31:39.988 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 07:31:40.176 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3458.9806ms
+2022-08-04 07:31:40.177 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:31:40.182 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 200 136 application/json;+charset=utf-8 3504.2854ms
+2022-08-04 07:41:07.718 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:41:07.759 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:41:07.764 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:41:07.764 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:41:07.764 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:41:08.218 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:41:08.498 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:41:08.499 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 285.6957ms
+2022-08-04 07:41:08.502 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.0967ms
+2022-08-04 07:41:09.195 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:41:09.329 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.2419ms
+2022-08-04 07:41:19.976 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:41:19.984 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:41:20.007 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:41:21.425 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:41:22.955 +06:00 [INF] Executed DbCommand (460ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:41:23.039 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 07:41:23.183 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3168.211ms
+2022-08-04 07:41:23.184 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:41:23.188 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 200 136 application/json;+charset=utf-8 3212.1981ms
+2022-08-04 07:42:16.031 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:42:16.070 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:42:16.075 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:42:16.076 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:42:16.076 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:42:16.617 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:42:16.895 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:42:16.896 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 283.3592ms
+2022-08-04 07:42:16.901 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.7118ms
+2022-08-04 07:42:17.555 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:42:17.688 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.5982ms
+2022-08-04 07:42:25.691 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:42:25.701 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:25.729 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:42:27.113 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:42:28.793 +06:00 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:42:28.847 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CountryDTO
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Models.CountryDTO
+   at lambda_method34(Closure , Object , CountryDTO , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 07:42:28.970 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 07:42:28.980 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3241.7746ms
+2022-08-04 07:42:28.981 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:28.987 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 3296.4626ms
+2022-08-04 07:42:33.181 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:42:33.181 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:33.182 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:42:33.247 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:42:33.256 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:42:33.257 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CountryDTO
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Models.CountryDTO
+   at lambda_method34(Closure , Object , CountryDTO , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 07:42:33.258 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 07:42:33.258 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 76.1664ms
+2022-08-04 07:42:33.258 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:33.258 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 77.2923ms
+2022-08-04 07:42:42.469 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:42:42.472 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:42.472 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:42:42.489 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:42:42.492 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:42:42.493 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CountryDTO
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Models.CountryDTO
+   at lambda_method34(Closure , Object , CountryDTO , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 07:42:42.493 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 07:42:42.493 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 21.3111ms
+2022-08-04 07:42:42.493 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:42:42.494 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 24.5119ms
+2022-08-04 07:42:49.491 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:42:49.535 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:42:49.540 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:42:49.541 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:42:49.541 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:42:49.926 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:42:50.273 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 350.7695ms
+2022-08-04 07:42:50.283 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:42:50.291 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.5164ms
+2022-08-04 07:42:50.813 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:42:50.943 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.6404ms
+2022-08-04 07:43:05.752 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:43:05.800 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:43:05.805 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:43:05.805 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:43:05.805 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:43:06.203 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:43:06.545 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 347.8481ms
+2022-08-04 07:43:06.549 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:43:06.560 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 11.5512ms
+2022-08-04 07:43:07.100 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:43:07.253 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.4713ms
+2022-08-04 07:43:57.294 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:43:57.309 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 15.6245ms
+2022-08-04 07:43:57.352 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:43:57.355 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 2.6455ms
+2022-08-04 07:43:57.854 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:43:57.857 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.7781ms
+2022-08-04 07:44:02.309 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:44:02.322 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 12.0816ms
+2022-08-04 07:44:02.363 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:44:02.363 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 0.4261ms
+2022-08-04 07:44:02.774 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:44:02.777 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3792ms
+2022-08-04 07:44:20.237 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:44:20.246 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 9.1965ms
+2022-08-04 07:44:20.298 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:44:20.299 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 1.2734ms
+2022-08-04 07:44:20.817 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:44:20.819 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1.4192ms
+2022-08-04 07:44:29.078 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:44:29.084 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 5.7181ms
+2022-08-04 07:44:29.116 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:44:29.116 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 0.3916ms
+2022-08-04 07:44:29.494 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:44:29.496 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.7625ms
+2022-08-04 07:44:33.994 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:44:34.004 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:44:34.032 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:44:35.395 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:44:37.334 +06:00 [INF] Executed DbCommand (463ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:44:37.402 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> CountryDTO
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Models.CountryDTO
+   at lambda_method34(Closure , Object , CountryDTO , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 07:44:37.434 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 07:44:37.442 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3402.1944ms
+2022-08-04 07:44:37.443 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:44:37.448 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 3453.7696ms
+2022-08-04 07:45:07.275 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:45:07.314 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:45:07.319 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:45:07.319 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:45:07.319 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:45:07.675 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:45:07.964 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 292.5636ms
+2022-08-04 07:45:07.964 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:45:07.972 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 7.2905ms
+2022-08-04 07:45:08.484 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:45:08.635 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.5258ms
+2022-08-04 07:46:32.208 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 07:46:32.256 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 07:46:32.261 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 07:46:32.262 +06:00 [INF] Hosting environment: Development
+2022-08-04 07:46:32.262 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 07:46:34.509 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 07:46:35.462 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 958.1223ms
+2022-08-04 07:46:35.709 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 07:46:35.719 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 9.8370ms
+2022-08-04 07:46:36.267 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 07:46:36.550 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 283.2966ms
+2022-08-04 07:46:45.081 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 07:46:45.102 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:46:45.151 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 07:46:47.440 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 07:46:50.554 +06:00 [INF] Executed DbCommand (572ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 07:46:50.685 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 07:46:51.038 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 5875.5915ms
+2022-08-04 07:46:51.039 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 07:46:51.046 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 200 136 application/json;+charset=utf-8 5966.5976ms
+2022-08-04 08:08:56.352 +06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/Country application/json 46
+2022-08-04 08:08:56.353 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:08:56.354 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:08:56.449 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:08:57.237 +06:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:08:57.239 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 08:08:57.243 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 888.5423ms
+2022-08-04 08:08:57.243 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:08:57.244 +06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/Country application/json 46 - 200 136 application/json;+charset=utf-8 892.0151ms
+2022-08-04 08:12:40.140 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 08:12:40.219 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 08:12:40.224 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 08:12:40.225 +06:00 [INF] Hosting environment: Development
+2022-08-04 08:12:40.225 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 08:12:41.797 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 08:12:42.358 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 08:12:42.361 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 570.6517ms
+2022-08-04 08:12:42.364 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.8620ms
+2022-08-04 08:12:42.936 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 08:12:43.259 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 322.7197ms
+2022-08-04 08:12:48.260 +06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/Country application/json 46
+2022-08-04 08:12:48.275 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:12:48.328 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:12:50.818 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:12:53.239 +06:00 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:12:53.534 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IList`1
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IList`1[[HotelListing.Models.CountryDTO, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: HotelListing.Models.CountryDTO needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method34(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method34(Closure , Object , IList`1 , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 08:12:53.703 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 08:12:53.743 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 5403.37ms
+2022-08-04 08:12:53.744 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:12:53.753 +06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/Country application/json 46 - 500 - text/plain;+charset=utf-8 5493.1077ms
+2022-08-04 08:13:06.668 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/api/Country - -
+2022-08-04 08:13:06.669 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:13:06.669 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:13:06.753 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:13:06.764 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:13:06.823 +06:00 [ERR] Something went wrong in the GetCountries
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IList`1
+System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IList`1[[HotelListing.Models.CountryDTO, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.ArgumentException: HotelListing.Models.CountryDTO needs to have a constructor with 0 args or only optional args. Validate your configuration for details. (Parameter 'type')
+   at lambda_method34(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method34(Closure , Object , IList`1 , ResolutionContext )
+   at HotelListing.Controllers.CountryController.GetCountries() in G:\ASPDotNetWebAPI\HotelListing\HotelListing\Controllers\CountryController.cs:line 30
+2022-08-04 08:13:06.824 +06:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-08-04 08:13:06.824 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 154.8607ms
+2022-08-04 08:13:06.824 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:13:06.825 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/api/Country - - - 500 - text/plain;+charset=utf-8 157.4411ms
+2022-08-04 08:14:31.553 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 08:14:31.595 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 08:14:31.600 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 08:14:31.601 +06:00 [INF] Hosting environment: Development
+2022-08-04 08:14:31.601 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 08:14:32.333 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 08:14:32.642 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 315.1265ms
+2022-08-04 08:14:32.645 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 08:14:32.650 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 5.5183ms
+2022-08-04 08:14:33.139 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 08:14:33.314 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.4187ms
+2022-08-04 08:14:41.464 +06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/Country application/json 46
+2022-08-04 08:14:41.472 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:14:41.502 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:14:42.958 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:14:43.953 +06:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:14:44.031 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Data.Country, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 08:14:44.220 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 2709.8805ms
+2022-08-04 08:14:44.221 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:14:44.226 +06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/Country application/json 46 - 200 136 application/json;+charset=utf-8 2761.7398ms
+2022-08-04 08:15:45.934 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 08:15:45.974 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 08:15:45.979 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 08:15:45.979 +06:00 [INF] Hosting environment: Development
+2022-08-04 08:15:45.979 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 08:15:46.442 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 08:15:46.742 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 305.2965ms
+2022-08-04 08:15:46.744 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 08:15:46.749 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.6927ms
+2022-08-04 08:15:47.124 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 08:15:47.263 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.7464ms
+2022-08-04 08:15:58.658 +06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/Country application/json 46
+2022-08-04 08:15:58.665 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:15:58.690 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:16:00.075 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:16:01.685 +06:00 [INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:16:01.767 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Models.CountryDTO, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 08:16:01.937 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3239.5538ms
+2022-08-04 08:16:01.938 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:16:01.943 +06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/Country application/json 46 - 200 178 application/json;+charset=utf-8 3284.8814ms
+2022-08-04 08:16:27.254 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-04 08:16:27.294 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-04 08:16:27.299 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-04 08:16:27.300 +06:00 [INF] Hosting environment: Development
+2022-08-04 08:16:27.300 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-04 08:16:27.799 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-04 08:16:28.081 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-04 08:16:28.082 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 287.8920ms
+2022-08-04 08:16:28.086 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 4.6904ms
+2022-08-04 08:16:28.487 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-04 08:16:28.618 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.7985ms
+2022-08-04 08:30:50.033 +06:00 [INF] Request starting HTTP/1.1 GET https://localhost:7073/api/Country application/json 46
+2022-08-04 08:30:50.042 +06:00 [INF] Executing endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:30:50.071 +06:00 [INF] Route matched with {action = "GetCountries", controller = "Country"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetCountries() on controller HotelListing.Controllers.CountryController (HotelListing).
+2022-08-04 08:30:51.501 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-04 08:30:53.290 +06:00 [INF] Executed DbCommand (432ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name], [c].[ShortName]
+FROM [Countries] AS [c]
+2022-08-04 08:30:53.366 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HotelListing.Models.CountryDTO, HotelListing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-08-04 08:30:53.528 +06:00 [INF] Executed action HotelListing.Controllers.CountryController.GetCountries (HotelListing) in 3449.277ms
+2022-08-04 08:30:53.529 +06:00 [INF] Executed endpoint 'HotelListing.Controllers.CountryController.GetCountries (HotelListing)'
+2022-08-04 08:30:53.535 +06:00 [INF] Request finished HTTP/1.1 GET https://localhost:7073/api/Country application/json 46 - 200 178 application/json;+charset=utf-8 3501.7207ms
