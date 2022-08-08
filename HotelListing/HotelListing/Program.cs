@@ -1,4 +1,5 @@
 
+using HotelListing;
 using HotelListing.Configurations;
 using HotelListing.Data;
 using HotelListing.IRepository;
@@ -32,7 +33,8 @@ builder.Services.AddAutoMapper(typeof(MapperInitilizer));
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddControllers().AddNewtonsoftJson(options => 
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
 builder.Services.AddCors(options => {
     options.AddPolicy(name: AllowAll, policy => {
         policy.AllowAnyOrigin()
