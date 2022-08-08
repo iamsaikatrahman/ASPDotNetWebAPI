@@ -16,12 +16,14 @@ namespace HotelListing.Controllers
 
         public CountryController(IUnitOfWork unitOfWork, ILogger<CountryController> logger, IMapper mapper)
         {
-            _unitOfWork = unitOfWork; 
+            _unitOfWork = unitOfWork;
             _logger = logger;
             _mapper = mapper;
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> GetCountries()
         {
             try
@@ -39,6 +41,8 @@ namespace HotelListing.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> GetCountry(int id)
         {
             try

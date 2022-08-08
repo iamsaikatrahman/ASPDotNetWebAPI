@@ -33,16 +33,16 @@ builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddControllers().AddNewtonsoftJson(options => 
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddCors(options=> {
+builder.Services.AddCors(options => {
     options.AddPolicy(name: AllowAll, policy => {
         policy.AllowAnyOrigin()
      .AllowAnyMethod()
      .AllowAnyHeader();
-    
+
     });
 });
 
-    var app = builder.Build();    
+var app = builder.Build();    
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

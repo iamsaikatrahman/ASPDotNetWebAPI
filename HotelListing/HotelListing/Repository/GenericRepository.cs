@@ -16,6 +16,7 @@ namespace HotelListing.Repository
             _context = context;
             _db = _context.Set<T>();
         }
+
         public async Task Delete(int id)
         {
             var entity = await _db.FindAsync(id);
