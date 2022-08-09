@@ -4,11 +4,13 @@ using HotelListing.Configurations;
 using HotelListing.Data;
 using HotelListing.IRepository;
 using HotelListing.Repository;
+using HotelListing.Services;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 
 var AllowAll = "_myAllowAllOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -31,10 +33,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(MapperInitilizer));
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IAuthManager, AuthManager>();
 builder.Services.AddControllers().AddNewtonsoftJson(options => 
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+
+builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.AddCors(options => {
     options.AddPolicy(name: AllowAll, policy => {
         policy.AllowAnyOrigin()
