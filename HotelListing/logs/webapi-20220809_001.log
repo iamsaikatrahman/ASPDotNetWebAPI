@@ -1,0 +1,17 @@
+2022-08-09 07:45:08.483 +06:00 [INF] Entity Framework Core 6.0.7 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+2022-08-09 07:46:13.316 +06:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-09 07:46:13.651 +06:00 [INF] Now listening on: https://localhost:7073
+2022-08-09 07:46:13.651 +06:00 [INF] Now listening on: http://localhost:5073
+2022-08-09 07:46:13.659 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-09 07:46:13.659 +06:00 [INF] Hosting environment: Development
+2022-08-09 07:46:13.659 +06:00 [INF] Content root path: G:\ASPDotNetWebAPI\HotelListing\HotelListing\
+2022-08-09 07:46:14.025 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/index.html - -
+2022-08-09 07:46:14.381 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-09 07:46:14.381 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/index.html - - - 200 - text/html;charset=utf-8 361.6243ms
+2022-08-09 07:46:14.384 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 3.5711ms
+2022-08-09 07:46:14.956 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-09 07:46:15.135 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.7926ms
+2022-08-09 08:05:02.813 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - -
+2022-08-09 08:05:02.850 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 66.3704ms
+2022-08-09 08:05:02.982 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - -
+2022-08-09 08:05:03.227 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7073/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.3381ms
