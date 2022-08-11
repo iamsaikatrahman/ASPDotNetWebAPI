@@ -22,5 +22,10 @@ namespace BooksApi.Manager
         {
             return GetFirstOrDefault(x => x.Id == id);
         }
+
+        public ICollection<Book> SearchBook(string text)
+        {
+            return Get(c => c.Title.ToLower().Contains(text.ToLower()));
+        }
     }
 }

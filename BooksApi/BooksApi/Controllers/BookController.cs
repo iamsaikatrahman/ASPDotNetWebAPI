@@ -102,6 +102,21 @@ namespace BooksApi.Controllers
             }
         }
 
+        [HttpGet("text")]
+        public IActionResult SearchBook(string text)
+        {
+            try
+            {
+                var books = _bookManager.SearchBook(text);
+                return CustomResult("Searching Books", books);
+            }
+            catch (Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+                throw;
+            }
+        }
+
         [HttpPost]
         public IActionResult AddBooks(Book book)
         {

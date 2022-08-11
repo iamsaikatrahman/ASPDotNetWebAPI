@@ -8,5 +8,6 @@ namespace BooksApi.Interfaces.Manager
         Book GetById(int id);
 
         ICollection<Book> GetAll(string title);
+        ICollection<Book> SearchBook(string text);
     }
 }
