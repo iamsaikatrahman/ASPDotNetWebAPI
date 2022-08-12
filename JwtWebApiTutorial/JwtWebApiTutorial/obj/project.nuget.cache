@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kHi1kG7p6ch9ZCwQ2I/+4ZV7/n5yR+EhZb/LsOCk3OXSQwhHmOXwOVRGKXsvfRqK9721PzoOU5XdUoSM1Up3wQ==",
+  "dgSpecHash": "zJAXIZN+MctnGLl8jcQ5v5aSrGYm4CxybE7sd5m6K1dWJO3Apvcd1ZkdPMto2KDyASwnTKxqLD2PX0pVNQ6FmA==",
   "success": true,
   "projectFilePath": "G:\\ASPDotNetWebAPI\\JwtWebApiTutorial\\JwtWebApiTutorial\\JwtWebApiTutorial.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\dotnetopenauth.core\\4.3.4.13329\\dotnetopenauth.core.4.3.4.13329.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\dotnetopenauth.core.ui\\4.3.4.13329\\dotnetopenauth.core.ui.4.3.4.13329.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\dotnetopenauth.infocard\\4.3.4.13329\\dotnetopenauth.infocard.4.3.4.13329.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\dotnetopenauth.infocard.ui\\4.3.4.13329\\dotnetopenauth.infocard.ui.4.3.4.13329.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -28,5 +32,46 @@
     "C:\\Users\\User\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.Core 4.3.4.13329' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.Core.UI 4.3.4.13329' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.Core.UI",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.InfoCard 4.3.4.13329' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.InfoCard",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DotNetOpenAuth.InfoCard.UI 4.3.4.13329' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DotNetOpenAuth.InfoCard.UI",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

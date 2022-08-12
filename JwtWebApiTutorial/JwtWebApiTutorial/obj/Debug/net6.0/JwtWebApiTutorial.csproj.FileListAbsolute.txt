@@ -37,3 +37,7 @@ G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\Microsof
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\Scrutor.dll
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.Core.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.Core.UI.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.InfoCard.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.InfoCard.UI.dll
