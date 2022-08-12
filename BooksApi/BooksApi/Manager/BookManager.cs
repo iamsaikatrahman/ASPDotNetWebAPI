@@ -25,7 +25,10 @@ namespace BooksApi.Manager
 
         public ICollection<Book> SearchBook(string text)
         {
-            return Get(c => c.Title.ToLower().Contains(text.ToLower()));
+            //Single property search
+            //return Get(c => c.Title.ToLower().Contains(text.ToLower()));
+            //Multiple property search
+            return Get(c => c.Title.ToLower().Contains(text.ToLower()) || c.Description.ToLower().Contains(text.ToLower()));
         }
     }
 }
