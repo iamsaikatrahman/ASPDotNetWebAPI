@@ -18,6 +18,16 @@ namespace BooksApi.Manager
             return Get(c => c.Title.ToLower() == title.ToLower());
         }
 
+        public ICollection<Book> GetBooks(int page, int pageSize)
+        {
+            if (page <= 1)
+            {
+                page = 0;
+            }
+            int totalNumber = page * pageSize;
+            return GetAll().Skip(totalNumber).Take(pageSize).ToList();
+        }
+
         public Book GetById(int id)
         {
             return GetFirstOrDefault(x => x.Id == id);

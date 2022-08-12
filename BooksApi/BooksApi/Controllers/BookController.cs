@@ -117,6 +117,20 @@ namespace BooksApi.Controllers
             }
         }
 
+        [HttpGet]
+        public IActionResult GetDataByPagination(int page = 1)
+        {
+            try
+            {
+                var books = _bookManager.GetBooks(page, 2);
+                return CustomResult("Paging data for page no "+page, books.ToList());
+            }
+            catch (Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+            }
+        }
+
         [HttpPost]
         public IActionResult AddBooks(Book book)
         {

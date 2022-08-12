@@ -9,5 +9,6 @@ namespace BooksApi.Interfaces.Manager
 
         ICollection<Book> GetAll(string title);
         ICollection<Book> SearchBook(string text);
+        ICollection<Book> GetBooks(int page, int pageSize);
     }
 }
