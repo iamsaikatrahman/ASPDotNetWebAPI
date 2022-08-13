@@ -41,3 +41,6 @@ G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOp
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.Core.UI.dll
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.InfoCard.dll
 G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\DotNetOpenAuth.InfoCard.UI.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\IdentityModel.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\IdentityServer4.Storage.dll
+G:\ASPDotNetWebAPI\JwtWebApiTutorial\JwtWebApiTutorial\bin\Debug\net6.0\Newtonsoft.Json.dll

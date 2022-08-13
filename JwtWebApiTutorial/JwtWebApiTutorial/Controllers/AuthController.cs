@@ -1,4 +1,5 @@
-﻿using JwtWebApiTutorial.Services.UserService;
+﻿
+using JwtWebApiTutorial.Services.UserService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -55,8 +56,52 @@ namespace JwtWebApiTutorial.Controllers
                 return BadRequest("Wrong password");
             }
             string token = CreateToken(user);
+            var refreshToken = GenerateRefreshToken();
+            setRefreshToken(refreshToken);
             return Ok(token);
         }
+        [HttpPost("refresh-token")]
+        public async Task<ActionResult<string>> RefreshToken()
+        { 
+            var refreshToken = Request.Cookies["refreshToken"];
+            if (!user.RefreshToken.Equals(refreshToken))
+            {
+                return Unauthorized("Invalid Refresh token");
+            }
+            else if (user.TokenExpires < DateTime.Now)
+            {
+                return Unauthorized("Token expired.");
+            }
+            string token = CreateToken(user);
+            var newRefreshToken = GenerateRefreshToken();
+            setRefreshToken(newRefreshToken);
+
+            return Ok(token);
+        }
+        private RefreshToken GenerateRefreshToken()
+        {
+            var refreshToken = new RefreshToken
+            {
+                Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
+                Expires = DateTime.Now.AddDays(7),
+                Created = DateTime.Now
+            };
+            return refreshToken;
+        }
+        private void setRefreshToken(RefreshToken newRefreshToken)
+        {
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = newRefreshToken.Expires
+            };
+            Response.Cookies.Append("refreshToken", newRefreshToken.Token, cookieOptions);
+            user.RefreshToken = newRefreshToken.Token;
+            user.TokenCreated = newRefreshToken.Created;
+            user.TokenExpires = newRefreshToken.Expires;
+        }
+
+        
 
         private string CreateToken(User user)
         {

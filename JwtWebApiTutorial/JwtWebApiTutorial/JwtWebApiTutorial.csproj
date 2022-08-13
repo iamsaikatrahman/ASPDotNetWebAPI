@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="DotNetOpenAuth.InfoCard.UI" Version="4.3.4.13329" />
+    <PackageReference Include="IdentityServer4.Storage" Version="4.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
